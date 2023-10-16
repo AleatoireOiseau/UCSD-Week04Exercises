@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week04Exercises</title>
+</head>
+<body>
+    <button id="firstButton">Click me</button>
+    <script>
+        // Variable Declaration and Data Types
+        console.log("Variable Declaration and Data Types");
+        let a = 1;
+        let b = 2.2;
+        let c = true;
+        let d = 'd';
+        let e = "word";
+
+        console.log(a, b, c, d, e);
+        console.log("");
+
+        // Operators
+        console.log("Operators");
+        let sum = a + b;
+        console.log("Addition (a + b): " + sum);
+
+        let dif = b - a;
+        console.log("Subtraction (b - a): " + dif);
+
+        let mult = a * b;
+        console.log("Multiplication (a * b): " + mult);
+
+        let divi = 4 / b;
+        console.log("Division (4 / b): " + divi);
+
+        let modu = 4 % b;
+        console.log("Modulus (4 % b): " + modu);
+        console.log("");
+
+        // Arrays
+        console.log("Arrays");
+        let array = ["Element 1", "Element 2", "Element 3"];
+        console.log(array);
+        console.log("array[0]: " + array[0]);
+        console.log("");
+
+        // Custom Functions
+        console.log("Functions");
+        function square(num) {
+            return num**2;
+        }
+        console.log(square(5));
+        console.log("");
+
+        // Objects
+        console.log("Objects");
+        let object = {
+            greeting: "Hi",
+            purpose: "UCSD class",
+            displayInfo: function() {
+                console.log(this.greeting + ", I exist for this " + this.purpose);
+            }
+        };
+        console.log("greeting: " + object.greeting);
+        console.log("purpose: " + object.purpose);
+        object.displayInfo();
+        console.log("");
+
+        // Conditionals
+        console.log("Conditionals");
+        let num = 5;
+        if (num < 5) {
+            console.log("Less than five");
+        } else if (num == 5) {
+            console.log("Equal to five");
+        } else if (num > 5) {
+            console.log("Greater than five");
+        } else {
+            console.log("Error");
+        }
+        console.log("");
+
+        // Loops
+        console.log("Loops");
+        for (let i = 0; i < 10; i++) {
+            console.log("i: " + i);
+        }
+
+        // Events
+        let button = document.querySelector("#firstButton");
+
+        button.addEventListener("click", function() {
+            button.innerHTML = "You did";
+        });
+    </script>
+</body>
+</html>
